@@ -114,7 +114,7 @@ func listFiles(fp string, level int, isshow bool) {
 
 func filterFile(fi fs.FileInfo) bool {
 	switch fi.Name() {
-	case ".git", "index.md", "index1.md", "index", "main.go", 
+	case ".git", "index.md", "index1.md", "index","Images", "main.go", 
 	".gitignore","go.mod", "main":
 		return true // 过滤这些文件
 	default:
